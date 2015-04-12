@@ -1,0 +1,16 @@
+﻿<Window x:Class="Gridworld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="700" Width="600">
+    <Grid x:Name="MainGrid">
+        <Button Content="Make Move" Margin="0,0,68,10"  Click="Button_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Button x:Name="PlayPauseButton" Content="Play"  Margin="0,0,10,10" Click="PlayPauseButton_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="53"/>
+        <ToolBarTray HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ToolBar Band="1" BandIndex="1">
+                <Button Content="Load" Click="LoadButton_Click"/>
+                <Button Content="Save" Click="SaveButton_Click"/>
+            </ToolBar>
+        </ToolBarTray>
+
+    </Grid>
+</Window>
